@@ -1,0 +1,5 @@
+include VERSION
+include README
+recursive-include sphinxcontrib *.py
+recursive-include sphinxcontrib/assets *
+recursive-include docs/source *
