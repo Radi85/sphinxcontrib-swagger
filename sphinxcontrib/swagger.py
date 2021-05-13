@@ -81,8 +81,11 @@ def create_embedded_openapi(app, *args):
     template_path = get_file_path(app.outdir, config['swagger_embedded_in'])
     swagger_path = get_file_path(app.outdir, get_standalone_page_name(config))
 
-    with open(swagger_path) as swagger_file:
-        swagger = swagger_file.read()
+    try:
+        with open(swagger_path) as swagger_file:
+            swagger = swagger_file.read()
+    except TypeError:
+        return
 
     try:
         with open(template_path, 'r+') as f:
@@ -110,6 +113,7 @@ def setup(app):
 
     app.connect('html-collect-pages', render)
     app.connect('build-finished', create_embedded_openapi)
+
 
     version = pkg_resources.get_distribution('sphinxcontrib-swagger').version
     return {'version': version, 'parallel_read_safe': True}
