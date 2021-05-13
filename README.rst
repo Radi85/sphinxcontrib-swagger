@@ -1,5 +1,5 @@
 Sphinxcontrib-Swagger
-===============
+======================
 
 Sphinx extension to render swagger page and embed it into an exiting document.
 
