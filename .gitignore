@@ -1,0 +1,70 @@
+*/*/*/__pycache__/
+*/*/__pycache__/
+*/__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+comment/backup_templates/comment/*
+# Distribution / packaging
+env/
+bin/
+build/
+develop-eggs/
+dist/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+# Translations
+*.mo
+
+# Mr Developer
+.mr.developer.cfg
+.project
+.pydevproject
+
+# Rope
+.ropeproject
+
+# Django stuff:
+*.log
+*.pot
+
+# Sphinx documentation
+docs/_build/
+
+# editor files
+.idea
+.vscode
+*.swp
+
+# env files
+Pipfile.lock
+Pipfile
+.env
+local_env/
+*env/
+*environment/
+
+# db
+db.sqlite*
+*/db.sqlite*
+*/*/db.sqlite*
