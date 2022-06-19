@@ -33,10 +33,10 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'sphinx>=1.5',
-        'jinja2==2.11.3',
-        'jsonschema==3.2.0',
-        'PyYAML==5.4.1',
+        'sphinx',
+        'jinja2',
+        'jsonschema',
+        'PyYAML',
     ],
     classifiers=[
         'Topic :: Documentation',
